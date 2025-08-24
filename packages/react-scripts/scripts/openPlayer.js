@@ -22,7 +22,7 @@ function openPlayer(url) {
         }
 
 
-        execFile(playerPath, ['--player', `--url=${url}`, '--root'], { stdio: 'inherit' });
+        execFile(playerPath, ['--player', `--url=${url}`, '--root','--vsync'], { stdio: 'inherit' });
     });
 }
 
